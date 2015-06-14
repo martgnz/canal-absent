@@ -8,8 +8,9 @@ var map = new L.Map('map', {
   zoomControl: false
 }).fitBounds(imageBounds);
 
-var overlay = L.imageOverlay(imageUrl, imageBounds, {opacity: 0.4})
-    .addTo(map);
+var overlay = L.imageOverlay(imageUrl, imageBounds, {
+  opacity: 0.4
+}).addTo(map);
 
 // Disable drag and zoom handlers.
 map.dragging.disable();
@@ -25,9 +26,9 @@ document.getElementById('map').style.cursor='default';
 
 // retina detection & tiles
 var attribution = {attribution: 'Map tiles by <a href="http://cartodb.com/attributions#basemaps">CartoDB</a>, under <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>. Data by <a href="http://www.openstreetmap.org/">OpenStreetMap</a>, under ODbL.'};
-var retina = window.devicePixelRatio > 1;
-  if (retina) {
-    L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}@2x.png',attribution).addTo(map);
-  } else {
-    L.t
-  }
+
+if (L.Browser.retina) {
+  L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}@2x.png',attribution).addTo(map);
+} else {
+  L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png',attribution).addTo(map);
+}
