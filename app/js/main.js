@@ -1,17 +1,16 @@
 // FIXME: need to adjust coordinates for not stretching the img
-var imageUrl = 'img/canal-warp.png',
-    imageBounds = L.latLngBounds([
-        [41.327874, 1.980321],
-        [41.393679, 2.186463]]);
-
-var map = new L.Map('map', {
-  zoomControl: false
-}).fitBounds(imageBounds);
-
-var overlay = L.imageOverlay(imageUrl, imageBounds, {
-  opacity: 0.4
-}).addTo(map);
-
+var map = L.map('map', {
+    center: [41.372361, 2.115978],
+    zoom: 15,
+    zoomControl: false,
+    layers:[
+      L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}@2x.png'),
+      L.tileLayer('http://mapwarper.net/maps/tile/9810/{z}/{x}/{y}.png', {
+        opacity: 0.4,
+        attribution: 'Map tiles by <a href="http://cartodb.com/attributions#basemaps">CartoDB</a>, under <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>. Data by <a href="http://www.openstreetmap.org/">OpenStreetMap</a>, under ODbL. | <a href="http://cartotecadigital.icc.cat/cdm/ref/collection/catalunya/id/1602">Institut Cartogràfic i Geològic de Catalunya</a>.'
+      })
+    ]
+});
 // Disable drag and zoom handlers.
 map.dragging.disable();
 map.touchZoom.disable();
@@ -23,12 +22,3 @@ if (map.tap) map.tap.disable();
 
 // Disable cursor interaction
 document.getElementById('map').style.cursor='default';
-
-// retina detection & tiles
-var attribution = {attribution: 'Map tiles by <a href="http://cartodb.com/attributions#basemaps">CartoDB</a>, under <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>. Data by <a href="http://www.openstreetmap.org/">OpenStreetMap</a>, under ODbL.'};
-
-if (L.Browser.retina) {
-  L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}@2x.png',attribution).addTo(map);
-} else {
-  L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png',attribution).addTo(map);
-}
