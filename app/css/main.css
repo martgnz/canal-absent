@@ -1,6 +1,7 @@
 body {
   font-family: 'Source Sans Pro', sans-serif;
   -moz-osx-font-smoothing: grayscale;
+  color: #333;
 }
 #map {
   height: 5000px;
