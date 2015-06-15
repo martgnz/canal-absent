@@ -13,11 +13,11 @@ var map = L.map('map', {
 
 // Awesome markers
 var marker1 = L.AwesomeMarkers.icon({
-    icon: 'coffee',
+    icon: 'car',
     markerColor: 'red'
 });
 
-L.marker([41.401435, 2.025298], {icon: marker1})
+L.marker([41.411286, 2.018812], {icon: marker1})
   .bindPopup("<b>Hello world</b><br />I am a popup.").addTo(map);
 
 // Disable drag and zoom handlers.
