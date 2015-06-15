@@ -1,13 +1,36 @@
 body {
+  font-family: 'Source Sans Pro', sans-serif;
   -moz-osx-font-smoothing: grayscale;
 }
 #map {
-  height: 670px;
-  width: 1500px;
+  height: 5000px;
+  width: 5000px;
 }
 .mapHeadline {
   position: absolute;
   z-index: 1;
-  color: rgb(255, 255, 255);
-  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
+  color: #333;
+  text-shadow: 0 0 5 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding-left: 20px;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: -2px;
+  line-height: 140px;
+  font-size: 160px;
+}
+.mapIntro {
+  position: absolute;
+  z-index: 1;
+  width: 500px;
+  padding-left: 22px;
+  padding-top: 350px;
+  font-size: 18px;
+}
+.mapCredit {
+  position: absolute;
+  z-index: 1;
+  padding-left: 22px;
+  padding-top: 500px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
 }
