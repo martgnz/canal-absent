@@ -1,4 +1,3 @@
-// FIXME: need to adjust coordinates for not stretching the img
 var map = L.map('map', {
     center: [41.351891, 2.119625],
     zoom: 15,
@@ -11,6 +10,16 @@ var map = L.map('map', {
       })
     ]
 });
+
+// Awesome markers
+var marker1 = L.AwesomeMarkers.icon({
+    icon: 'coffee',
+    markerColor: 'red'
+});
+
+L.marker([41.401435, 2.025298], {icon: marker1})
+  .bindPopup("<b>Hello world</b><br />I am a popup.").addTo(map);
+
 // Disable drag and zoom handlers.
 map.dragging.disable();
 map.touchZoom.disable();

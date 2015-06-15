@@ -1,20 +1,20 @@
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   -moz-osx-font-smoothing: grayscale;
   color: #333;
 }
 #map {
-  height: 5000px;
+  height: 4500px;
   width: 5000px;
 }
 .mapHeadline {
   position: absolute;
   z-index: 1;
-  color: #333;
-  text-shadow: 0 0 5 rgba(0, 0, 0, 0.2);
+  color: rgb(255,255,255);
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
   border-radius: 5px;
-  padding-left: 20px;
-  font-family: 'Playfair Display', serif;
+  padding-left: 35px;
+  font-family: 'Playfair Display', Georgia, Times, serif;
   letter-spacing: -2px;
   line-height: 140px;
   font-size: 160px;
@@ -22,16 +22,17 @@ body {
 .mapIntro {
   position: absolute;
   z-index: 1;
-  width: 500px;
-  padding-left: 22px;
-  padding-top: 350px;
+  width: 450px;
+  margin-left: 700px;
+  margin-top: 320px;
   font-size: 18px;
+  font-weight: 600;
 }
 .mapCredit {
   position: absolute;
   z-index: 1;
-  padding-left: 22px;
-  padding-top: 500px;
+  margin-left: 700px;
+  margin-top: 480px;
   text-transform: uppercase;
   letter-spacing: 3px;
 }
