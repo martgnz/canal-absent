@@ -4,13 +4,20 @@ body {
     text-rendering: optimizeLegibility;
     -moz-osx-font-smoothing: grayscale;
 }
+a {
+    color: rgb(255, 255, 255);
+}
 a:hover {
     text-decoration: none;
     color: rgb(255, 255, 255);
 }
+.col-sm-12 {
+    padding-left: 0;
+    padding-right: 0;
+}
 .introSection {
     height: 100vh;
-    background: url(../img/canal-web.jpg) no-repeat center center fixed;
+    background: url(../img/canal-web-grey.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -18,10 +25,6 @@ a:hover {
 }
 #map {
     height: 100vh;
-}
-.col-sm-12 {
-    padding-left: 0;
-    padding-right: 0;
 }
 .mapHeadline {
     color: rgb(255,255,255);
@@ -36,7 +39,7 @@ a:hover {
 .mapIntro {
     font-size: 20px;
     font-weight: 300;
-    padding-top: 20px;
+    padding-top: 40px;
 }
 .mapCredit {
     text-transform: uppercase;
@@ -61,4 +64,8 @@ a:hover {
 }
 .leaflet-popup-content {
     color: #333;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
 }
