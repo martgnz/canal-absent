@@ -28,6 +28,7 @@
     "wow": "~1.1.2",
     "Scrollify": "~0.1.6",
     "jquery-easing": "*",
-    "font-awesome": "~4.3.0"
+    "font-awesome": "~4.3.0",
+    "jquery.scrollTo": "~2.1.1"
   }
 }

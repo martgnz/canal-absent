@@ -4,6 +4,10 @@ body {
     text-rendering: optimizeLegibility;
     -moz-osx-font-smoothing: grayscale;
 }
+a:hover {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
 .introSection {
     height: 100vh;
     background: url(../img/canal-web.jpg) no-repeat center center fixed;
@@ -36,4 +40,19 @@ body {
     font-size: 14px;
     letter-spacing: 3px;
     padding-top: 40px;
+}
+.scrollDown {
+    display: block;
+    position: absolute;
+    z-index: 100;
+    bottom: 45px;
+    left: 50%;
+    margin-left: -16px;
+    width: 50px;
+    height: 50px;
+    font-size: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+    animation: 4s ease 2s normal none infinite running bounce;
 }
