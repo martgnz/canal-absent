@@ -62,7 +62,7 @@ var marker8 = L.AwesomeMarkers.icon({
 
 
 L.marker([41.40961103874989, 2.0174024933567725], {icon: marker1})
-  .bindPopup("<b>Hello world</b><br />I am a popup.").addTo(map);
+  .bindPopup("<b>Casa de les Aigües / Molins de Rei</b><br />I am a popup.").addTo(map);
 
 L.marker([41.40351729938136, 2.027182289462256], {icon: marker2})
   .bindPopup("<b>Hello world</b><br />I am a popup.").addTo(map);
