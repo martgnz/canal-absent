@@ -27,6 +27,7 @@
     "leaflet": "~0.7.3",
     "wow": "~1.1.2",
     "Scrollify": "~0.1.6",
-    "jquery-easing": "*"
+    "jquery-easing": "*",
+    "font-awesome": "~4.3.0"
   }
 }

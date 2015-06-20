@@ -11,13 +11,13 @@ body {
     height: 100vh;
 }
 .mapHeadline {
-    font-family: 'Playfair Display', Georgia, Times, serif;
     color: rgb(255,255,255);
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
     border-radius: 5px;
     letter-spacing: -2px;
     line-height: 50px;
     font-size: 60px;
+    font-weight: 600;
 }
 .mapIntro {
     width: 450px;

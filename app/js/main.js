@@ -7,8 +7,8 @@ $(function() {
 
 // leaflet stuff
 var map = L.map('map', {
-    center: [41.351891, 2.119625],
-    zoom: 15,
+    center: [41.380432, 2.086341],
+    zoom: 13,
     zoomControl: false,
     layers:[
       L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}@2x.png'),
@@ -85,10 +85,5 @@ L.marker([41.36129181647807, 2.0921319431464958], {icon: marker7})
 L.marker([41.352521887365626, 2.1521511626534315], {icon: marker8})
   .bindPopup("<b>Hello world</b><br />I am a popup.").addTo(map);
 
-// Disable drag and zoom handlers.
-map.touchZoom.disable();
-map.doubleClickZoom.disable();
+// Disable scrollwheel handler.
 map.scrollWheelZoom.disable();
-
-// Disable tap handler, if present.
-if (map.tap) map.tap.disable();
