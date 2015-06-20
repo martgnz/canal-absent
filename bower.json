@@ -25,6 +25,8 @@
   "dependencies": {
     "bootstrap": "~3.3.4",
     "leaflet": "~0.7.3",
-    "wow": "~1.1.2"
+    "wow": "~1.1.2",
+    "Scrollify": "~0.1.6",
+    "jquery-easing": "*"
   }
 }

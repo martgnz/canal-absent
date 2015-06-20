@@ -1,3 +1,11 @@
+// sections
+$(function() {
+    $.scrollify({
+        section : "section",
+    });
+});
+
+// leaflet stuff
 var map = L.map('map', {
     center: [41.351891, 2.119625],
     zoom: 15,
@@ -78,13 +86,9 @@ L.marker([41.352521887365626, 2.1521511626534315], {icon: marker8})
   .bindPopup("<b>Hello world</b><br />I am a popup.").addTo(map);
 
 // Disable drag and zoom handlers.
-map.dragging.disable();
 map.touchZoom.disable();
 map.doubleClickZoom.disable();
 map.scrollWheelZoom.disable();
 
 // Disable tap handler, if present.
 if (map.tap) map.tap.disable();
-
-// Disable cursor interaction
-document.getElementById('map').style.cursor='default';
