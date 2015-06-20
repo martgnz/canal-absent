@@ -65,6 +65,10 @@ a:hover {
 .leaflet-popup-content {
     color: #333;
 }
+.leaflet-control-attribution a:hover {
+    color: #0078A8;
+    text-decoration: none;
+}
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
