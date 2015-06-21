@@ -24,7 +24,7 @@ var map = L.map('map', {
 // Disable scrollwheel handler.
 map.scrollWheelZoom.disable();
 
-// Awesome markers
+// Maki markers
 var marker1 = L.MakiMarkers.icon({
     icon: 'water',
     color: '#0074D9',
