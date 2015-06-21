@@ -29,5 +29,7 @@
     "jquery-easing": "*",
     "font-awesome": "~4.3.0",
     "vide": "~0.3.5",
-    "wow": "~1.1.2"  }
+    "wow": "~1.1.2",
+    "Leaflet.MakiMarkers": "~1.0.1"
+  }
 }

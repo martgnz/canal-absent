@@ -71,6 +71,9 @@ a:hover {
     font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 14px;
 }
+.leaflet-container img {
+    width: 100%;
+}
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
