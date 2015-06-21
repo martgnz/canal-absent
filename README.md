@@ -9,4 +9,4 @@ Install the dependencies with `bower install` and run your local server of choic
 - [Real canal de la infanta Da Luisa Carlota de Borbón](http://cartotecadigital.icc.cat/cdm/ref/collection/catalunya/id/1602) by Institut Cartogràfic i Geològic de Catalunya. BY-NC-ND.
 
 ## Authors
-[Martín González](https://twitter.com/martgnz) and [Jordi Julià](https://twitter.com/jordijs).
+2015. [Martín González](https://twitter.com/martgnz) and [Jordi Julià](https://twitter.com/jordijs).
