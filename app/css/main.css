@@ -24,25 +24,24 @@ a:hover {
 .mapHeadline {
     font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     color: rgb(255,255,255);
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+    text-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
     border-radius: 5px;
-    letter-spacing: -2px;
+    letter-spacing: 3px;
     line-height: 35px;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 400;
+    text-transform: uppercase;
 }
 .mapIntro {
     font-size: 16px;
     font-weight: 400;
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-    padding-top: 10px;
 }
 .mapCredit {
     font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     font-size: 12px;
     letter-spacing: 3px;
-    padding-top: 15px;
     text-align: center;
 }
 .scrollDown {
@@ -59,6 +58,11 @@ a:hover {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.7);
     animation: 4s ease 2s normal none infinite running bounce;
+}
+.mapTitle {
+    position: absolute;
+    z-index: 1;
+    text-align: right;
 }
 .leaflet-popup-content {
     color: rgb(51, 51, 51);
@@ -82,7 +86,6 @@ a:hover {
         line-height: 35px;
     }
     .mapIntro {
-        padding-top: 10px;
         font-size: 18px;
     }
     .mapCredit {
@@ -98,7 +101,7 @@ a:hover {
         line-height: 55px;
     }
     .mapIntro {
-        padding-top: 60px;
+        padding-top: 30px;
         font-size: 16px;
     }
     .mapCredit {
@@ -114,8 +117,8 @@ a:hover {
         font-size: 70px;
     }
     .mapIntro {
-        padding-top: 120px;
         font-size: 20px;
+        padding-top: 60px;
     }
     .scrollDown {
         width: 50px;
