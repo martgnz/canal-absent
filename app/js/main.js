@@ -10,13 +10,13 @@ new WOW().init();
 
 // leaflet stuff - TODO: Load map tiles on demand
 var map = L.map('map', {
-    center: [41.380432, 2.086341],
+    center: [41.375433, 2.086588],
     zoom: 13,
     layers:[
-      L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}@2x.png'),
+      L.tileLayer('http://{s}.tiles.mapbox.com/v4/martgnz.mgo71j3d/{z}/{x}/{y}@2x.png?access_token=pk.eyJ1IjoibWFydGdueiIsImEiOiJkSkl4M2cwIn0.0v-HWEKDWZX8Qnadnkbrow'),
       L.tileLayer('http://mapwarper.net/maps/tile/9810/{z}/{x}/{y}.png', {
-        opacity: 0.3,
-        attribution: 'Map tiles by <a href="http://cartodb.com/attributions#basemaps">CartoDB</a>, under <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>. Data by <a href="http://www.openstreetmap.org/">OpenStreetMap</a>, under ODbL. | <a href="http://cartotecadigital.icc.cat/cdm/ref/collection/catalunya/id/1602">Institut Cartogràfic i Geològic de Catalunya</a>.'
+        opacity: 0.6,
+        attribution: '<a href="https://www.mapbox.com/about/maps/">© Mapbox © OpenStreetMap</a> <a href="https://www.mapbox.com/map-feedback/"><strong>Improve this map</strong></a> | <a href="http://cartotecadigital.icc.cat/cdm/ref/collection/catalunya/id/1602">Institut Cartogràfic i Geològic de Catalunya</a>.'
       })
     ]
 });
