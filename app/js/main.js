@@ -5,6 +5,9 @@ $(function() {
     });
 });
 
+// wow
+new WOW().init();
+
 // leaflet stuff - TODO: Load map tiles on demand
 var map = L.map('map', {
     center: [41.380432, 2.086341],

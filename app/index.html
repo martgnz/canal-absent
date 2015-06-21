@@ -11,8 +11,10 @@
     <link rel="stylesheet" href="/bower_components/leaflet/dist/leaflet.css" />
     <!-- Custom fonts -->
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600" rel="stylesheet" type="text/css">
+    <!-- Libraries -->
     <link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/leaflet.awesome-markers.css">
+    <link rel="stylesheet" href="/bower_components/wow/css/libs/animate.css">
     <!-- Style -->
     <link rel="stylesheet" href="css/main.css" />
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -27,18 +29,20 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-8">
-                    <h1 class="mapHeadline">El Canal de la Infanta</h1>
+                    <h1 class="mapHeadline wow fadeInDown" data-wow-duration="2s" data-wow-delay="2s">El Canal de la Infanta</h1>
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-8">
-                    <div class="mapIntro">
+                    <div class="mapIntro wow fadeIn" data-wow-duration="2s" data-wow-delay="4s">
                         <p>El Baix Llobregat no seria el que és sense el Canal de la Infanta. Des del 1819 rega el marge esquerre del Llobregat, des de Molins de Rei fins a Montjuïc. Estava pensat per a l’agricultura, però va ser clau perquè s’hi instalessin fàbriques que aprofitaven l’energia hidràulica.</p>
                         <p>Gràcies a ell va créixer la comarca, però aquest creixement l’ha engolit. Gairebé no queden terres ni fàbriques i les ciutats li donen l’esquena. Associacions en defensa del patrimoni històric el volen posar en valor. </p>
                         <p class="mapCredit"> <a href="https://twitter.com/martgnz">Martín González</a> i <a href="https://twitter.com/jordijs">Jordi Julià</a></p>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="backgroundVideo" data-vide-bg="mp4: video/cover.mp4, webm: video/cover.webm, ogv:      video/cover.ogv, poster: video/poster.jpg" data-vide-options="posterType: jpg, loop: false, muted: true, position: 0% 0%">
         </div>
         <a class="scrollDown fa fa-angle-down" href="#map"><span class="hidden">Scroll Down</span></a>
     </section>
@@ -52,7 +56,8 @@
     <script src="/bower_components/jquery/dist/jquery.min.js"></script>
     <script src="/bower_components/jquery-easing/jquery.easing.min.js"></script>
     <script src="/bower_components/Scrollify/jquery.scrollify.min.js"></script>
-    <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/bower_components/wow/dist/wow.min.js"></script>
+    <script src="/bower_components/vide/dist/jquery.vide.min.js"></script>
     <script src="/bower_components/leaflet/dist/leaflet.js"></script>
     <script src="js/leaflet.awesome-markers.js"></script>
     <script src="js/main.js"></script>

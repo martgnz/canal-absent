@@ -23,6 +23,9 @@ a:hover {
     -o-background-size: cover;
     background-size: cover;
 }
+.backgroundVideo {
+    height: 100vh
+}
 #map {
     height: 100vh;
 }
