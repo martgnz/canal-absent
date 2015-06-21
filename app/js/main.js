@@ -98,7 +98,7 @@ L.marker([41.408973, 2.016457], {icon: marker2})
     .bindPopup("<strong>Carrer del General Castaños</strong><br />El capità general de Catalunya, Francisco Javier Castaños, va ser un gran impulsor d’aquest canal.<br /> S’havia de dir “Canal de Castaños”, però es va acabar dedicant a la infanta Carlota perquè, aprofitant que visitava Barcelona, se la va convidar a inaugurar el canal tot i no estar acabat. A canvi, se li va dedicar un carrer. També hi havia l’ordre de plantar castanyers a la riba, tot i que no es va arribar a fer.").addTo(map);
 
 L.marker([41.403519, 2.027182], {icon: marker3})
-    .bindPopup("<strong>Avinguda Barcelona / Molins de Rei</strong><br />Després de la cobertura que es va fer l’any (????), aquest és el primer punt on el canal veu la llum, a l’inici del polígon industrial el Pla. En bona part del polígon passa per dins de les fàbriques o als seus terrenys.").addTo(map);
+    .bindPopup("<strong>Avinguda Barcelona / Molins de Rei</strong><br />Després que es cobrís totalment al seu pas per Molins de Rei, aquest és el primer punt on el canal veu la llum, a l’inici del polígon industrial el Pla. En bona part del polígon passa per dins de les fàbriques o als seus terrenys.").addTo(map);
 
 L.marker([41.400489, 2.031935], {icon: marker4})
     .bindPopup("<strong>Pont de Can Capellans</strong><br />Un dels ponts més singulars, que permet el pas de vehicles a la part superior i el de persones per les escales.").addTo(map);
