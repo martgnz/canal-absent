@@ -27,7 +27,7 @@ map.scrollWheelZoom.disable();
 // Maki markers
 var marker1 = L.MakiMarkers.icon({
     icon: 'farm',
-    color: '#39CCCC',
+    color: '#FF4136',
     size: 'l'
 });
 
@@ -44,20 +44,20 @@ var marker3 = L.MakiMarkers.icon({
 });
 
 var marker4 = L.MakiMarkers.icon({
-    icon: 'circle',
+    icon: 'water',
     color: '#0074D9',
     size: 'l'
 });
 
 var marker5 = L.MakiMarkers.icon({
-    icon: 'circle',
+    icon: 'water',
     color: '#0074D9',
     size: 'l'
 });
 
 var marker6 = L.MakiMarkers.icon({
-    icon: 'wetland',
-    color: '#39CCCC',
+    icon: 'water',
+    color: '#0074D9',
     size: 'l'
 });
 
@@ -74,20 +74,20 @@ var marker8 = L.MakiMarkers.icon({
 });
 
 var marker9 = L.MakiMarkers.icon({
-    icon: 'circle',
+    icon: 'water',
     color: '#0074D9',
     size: 'l'
 });
 
 var marker10 = L.MakiMarkers.icon({
-    icon: 'soccer',
-    color: '#B10DC9',
+    icon: 'water',
+    color: '#0074D9',
     size: 'l'
 });
 
 var marker11 = L.MakiMarkers.icon({
-    icon: 'cemetery',
-    color: '#111111',
+    icon: 'industrial',
+    color: '#FF4136',
     size: 'l'
 });
 
