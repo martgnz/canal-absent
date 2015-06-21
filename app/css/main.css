@@ -34,21 +34,20 @@ a:hover {
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
     border-radius: 5px;
     letter-spacing: -2px;
-    line-height: 60px;
-    font-size: 70px;
+    line-height: 35px;
+    font-size: 40px;
     font-weight: 600;
-    padding-top: 40px;
 }
 .mapIntro {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 300;
-    padding-top: 150px;
+    padding-top: 10px;
 }
 .mapCredit {
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 12px;
     letter-spacing: 3px;
-    padding-top: 40px;
+    padding-top: 35px;
 }
 .scrollDown {
     display: block;
@@ -57,9 +56,9 @@ a:hover {
     bottom: 45px;
     left: 50%;
     margin-left: -16px;
-    width: 50px;
-    height: 50px;
-    font-size: 50px;
+    width: 35px;
+    height: 35px;
+    font-size: 35px;
     text-align: center;
     text-decoration: none;
     color: rgba(255, 255, 255, 0.7);
@@ -74,25 +73,50 @@ a:hover {
 }
 
 /* Small devices (tablets, 768px and up) */
-@media (max-width: 768px) {
+@media (min-width: 768px) {
     .mapHeadline {
-        padding-top: 0;
-        font-size: 40px;
+        font-size: 50px;
         line-height: 35px;
     }
     .mapIntro {
         padding-top: 10px;
-        font-size: 16px;
+        font-size: 18px;
+    }
+    .mapCredit {
+        font-size: 14px;
+        padding-top: 40px;
     }
 }
 /* Medium devices (desktops, 992px and up) */
-@media (max-width: 992px) {
+@media (min-width: 992px) {
     .mapHeadline {
         padding-top: 10px;
-        font-size: 50px;
-        line-height: 45px;
+        font-size: 60px;
+        line-height: 55px;
     }
     .mapIntro {
+        padding-top: 100px;
+        font-size: 18px;
+    }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .mapHeadline {
+        padding-top: 40px;
+        line-height: 60px;
+        font-size: 70px;
+    }
+    .mapIntro {
+        padding-top: 120px;
+        font-size: 20px;
+    }
+    .scrollDown {
+        width: 50px;
+        height: 50px;
+        font-size: 50px;
+    }
+    .mapCredit {
         font-size: 16px;
     }
 }
