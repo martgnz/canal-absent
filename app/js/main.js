@@ -80,12 +80,6 @@ var marker9 = L.MakiMarkers.icon({
 });
 
 var marker10 = L.MakiMarkers.icon({
-    icon: 'water',
-    color: '#0074D9',
-    size: 'l'
-});
-
-var marker11 = L.MakiMarkers.icon({
     icon: 'industrial',
     color: '#FF4136',
     size: 'l'
@@ -118,8 +112,5 @@ L.marker([41.361226, 2.090673], {icon: marker8})
 L.marker([41.359509, 2.095872], {icon: marker9})
     .bindPopup("<h3>La Remunta / l’Hospitalet de Llobregat</h3><br /><iframe width='465' height='290' src='https://www.youtube.com/embed/k5JECTcvClU' frameborder='0' allowfullscreen></iframe><p>La plataforma “Protegim el canal de la infanta”, encapçalada per l’historiador Ireneu Castillo, va aconseguir que es preservés el pont i el canal que hi havia dins l’antiga caserna de la Remunta. Tot i això, els criteris per restaurar-lo han estat més estètics que històrics.</p>").addTo(map);
 
-L.marker([41.357150, 2.067833], {icon: marker10})
-    .bindPopup("<h3>Can Trabal / L’Hospitalet</h3><p>L’últim punt per on ara mateix segueix circulant aigua. A partir de la ciutat esportiva de St. Joan Despí el canal principal ja no porta aigua i circula desviada per canals secundaris.</p>").addTo(map);
-
-L.marker([41.353161, 2.155336], {icon: marker11})
+L.marker([41.353161, 2.155336], {icon: marker10})
     .bindPopup("<h3>Cementiri de Montjuïc / Barcelona</h3><br /><img src='img/cementiri-montjuic.jpg'><p>L’últim punt on es conserva el canal, per estar adossat al mur del cementiri de Montjuïc. Desembocava als peus del far de Montjuïc, però l’ampliació del port i la construcció d’infraestructures ho han esborrat.</p>").addTo(map);
