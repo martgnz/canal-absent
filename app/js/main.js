@@ -24,71 +24,63 @@ var map = L.map('map', {
 // Disable scrollwheel handler.
 map.scrollWheelZoom.disable();
 
-// Maki markers
-var marker1 = L.MakiMarkers.icon({
-    icon: 'farm',
-    color: '#FF4136',
-    size: 'l'
+// Awesome markers
+var marker1 = L.AwesomeMarkers.icon({
+    icon: '',
+    markerColor: 'red',
+    html: '<span>1</span>'
 });
 
-var marker2 = L.MakiMarkers.icon({
-    icon: 'industrial',
-    color: '#FF4136',
-    size: 'l'
+var marker2 = L.AwesomeMarkers.icon({
+    icon: '',
+    markerColor: 'red',
+    html: '<span>2</span>'
 });
 
-var marker3 = L.MakiMarkers.icon({
-    icon: 'industrial',
-    color: '#FF4136',
-    size: 'l'
-});
+var marker3 = L.AwesomeMarkers.icon({
+    icon: '',
+    markerColor: 'red',
+    html: '<span>3</span>'});
 
-var marker4 = L.MakiMarkers.icon({
-    icon: 'water',
-    color: '#0074D9',
-    size: 'l'
-});
+var marker4 = L.AwesomeMarkers.icon({
+    icon: '',
+    markerColor: 'red',
+    html: '<span>4</span>'});
 
-var marker5 = L.MakiMarkers.icon({
-    icon: 'water',
-    color: '#0074D9',
-    size: 'l'
-});
+var marker5 = L.AwesomeMarkers.icon({
+    icon: '',
+    markerColor: 'red',
+    html: '<span>5</span>'});
 
-var marker6 = L.MakiMarkers.icon({
-    icon: 'water',
-    color: '#0074D9',
-    size: 'l'
-});
+var marker6 = L.AwesomeMarkers.icon({
+    icon: '',
+    markerColor: 'red',
+    html: '<span>6</span>'});
 
-var marker7 = L.MakiMarkers.icon({
-    icon: 'park',
-    color: '#2ECC40',
-    size: 'l'
-});
+var marker7 = L.AwesomeMarkers.icon({
+    icon: '',
+    markerColor: 'red',
+    html: '<span>7</span>'});
 
-var marker8 = L.MakiMarkers.icon({
-    icon: 'industrial',
-    color: '#FF4136',
-    size: 'l'
-});
+var marker8 = L.AwesomeMarkers.icon({
+    icon: '',
+    markerColor: 'red',
+    html: '<span>8</span>'});
 
-var marker9 = L.MakiMarkers.icon({
-    icon: 'water',
-    color: '#0074D9',
-    size: 'l'
-});
+var marker9 = L.AwesomeMarkers.icon({
+    icon: '',
+    markerColor: 'red',
+    html: '<span>9</span>'});
 
-var marker10 = L.MakiMarkers.icon({
-    icon: 'industrial',
-    color: '#FF4136',
-    size: 'l'
-});
+var marker10 = L.AwesomeMarkers.icon({
+    icon: '',
+    markerColor: 'red',
+    html: '<span>10</span>'});
 
-L.marker([41.40961103874989, 2.0174024933567725], {icon: marker1})
+L.marker([41.409616, 2.017407], {icon: marker1})
     .bindPopup("<h3>Casa de les Aigües / Molins de Rei</h3><br /><img src='img/casa-aigues.jpg'><p>El canal es va construir aprofitant les aigües del Rec Vell, que agafava les aigües del Llobregat al Papiol. En aquest edifici es controlava quanta aigua del anava al canal i quanta tornava al riu, marcant l’inici del canal. La infanta Luisa Carlota de Borbón va obrir les comportes.</p>").addTo(map);
 
-L.marker([41.408973, 2.016457], {icon: marker2})
+L.marker([41.408553, 2.015695], {icon: marker2})
     .bindPopup("<h3>Carrer del General Castaños</h3><p>El capità general de Catalunya, Francisco Javier Castaños, va ser un gran impulsor d’aquest canal.</p><p>S’havia de dir “Canal de Castaños”, però es va acabar dedicant a la infanta Carlota perquè, aprofitant que visitava Barcelona, se la va convidar a inaugurar el canal tot i no estar acabat. A canvi, se li va dedicar un carrer. També hi havia l’ordre de plantar castanyers a la riba, tot i que no es va arribar a fer.</p>").addTo(map);
 
 L.marker([41.403519, 2.027182], {icon: marker3})

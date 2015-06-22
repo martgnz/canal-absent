@@ -1,5 +1,5 @@
 body {
-    font-family: 'Source Serif Pro', Georgia, serif;
+    font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     color: rgb(255,255,255);
     text-rendering: optimizeLegibility;
     -moz-osx-font-smoothing: grayscale;
@@ -23,7 +23,6 @@ a:hover {
     height: 100vh;
 }
 .mapHeadline {
-    font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     color: rgb(255,255,255);
     text-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
     border-radius: 5px;
@@ -34,6 +33,7 @@ a:hover {
     text-transform: uppercase;
 }
 .mapIntro {
+    font-family: 'Source Serif Pro', Georgia, serif;
     font-size: 16px;
     font-weight: 400;
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
@@ -61,7 +61,6 @@ a:hover {
     animation: 4s ease 2s normal none infinite running bounce;
 }
 .mapTitle {
-    font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     border-radius: 4px;
     margin-top: 10px;
     position: absolute;
@@ -97,6 +96,10 @@ a:hover {
 .leaflet-control-attribution a:hover {
     color: rgb(0, 120, 168);
     text-decoration: none;
+}
+div.awesome-marker-icon-red > i > span {
+    font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 700;
 }
 
 /* Small devices (tablets, 768px and up) */
