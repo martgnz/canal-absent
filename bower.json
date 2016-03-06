@@ -23,12 +23,12 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap": "~3.3.4",
-    "leaflet": "~0.7.3",
-    "Scrollify": "~0.1.6",
+    "bootstrap": "~3.3.6",
+    "leaflet": "~0.7.7",
+    "Scrollify": "~0.1.12",
     "jquery-easing": "*",
     "font-awesome": "~4.3.0",
-    "vide": "~0.3.5",
+    "vide": "~0.5.0",
     "wow": "~1.1.2",
     "Leaflet.awesome-markers": "~2.0.2"
   }
