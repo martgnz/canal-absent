@@ -30,8 +30,6 @@ var map = L.map('map', {
         })
     ]
 });
-console.log(map.getBounds());
-
 
 // map listeners
 map.on('drag', function () {
