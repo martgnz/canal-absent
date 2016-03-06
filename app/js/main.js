@@ -2,8 +2,16 @@
 $(function() {
     $.scrollify({
         section : "section",
+        before: function(i) {
+            if (i === 1) {
+                $("video").get(0).pause();
+            } else {
+                $("video").get(0).play();
+            }
+        }
     });
 });
+
 
 // leaflet stuff
 var map = L.map('map', {
