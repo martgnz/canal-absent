@@ -23,8 +23,8 @@ var map = L.map('map', {
     minZoom: 13,
     maxBounds: bounds,
     layers: [
-        L.tileLayer('http://{s}.tiles.mapbox.com/v4/martingnz.pbb52017/{z}/{x}/{y}@2x.png?access_token=pk.eyJ1IjoibWFydGluZ256IiwiYSI6ImNpbGd2cG5tMTAwNWV3OGx6MHg1MmltYnQifQ.A6Fvtb7Sk_okvco9kuDziA'),
-        L.tileLayer('http://mapwarper.net/maps/tile/9810/{z}/{x}/{y}.png', {
+        L.tileLayer('//{s}.tiles.mapbox.com/v4/martingnz.pbb52017/{z}/{x}/{y}@2x.png?access_token=pk.eyJ1IjoibWFydGluZ256IiwiYSI6ImNpbGd2cG5tMTAwNWV3OGx6MHg1MmltYnQifQ.A6Fvtb7Sk_okvco9kuDziA'),
+        L.tileLayer('//mapwarper.net/maps/tile/9810/{z}/{x}/{y}.png', {
             opacity: 0.6,
             attribution: '<a href="https://www.mapbox.com/about/maps/">© Mapbox</a> | <a href="http://cartotecadigital.icc.cat/cdm/ref/collection/catalunya/id/1602"><b>Institut Cartogràfic i Geològic de Catalunya</b></a>.'
         })
