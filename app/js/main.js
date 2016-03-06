@@ -5,9 +5,6 @@ $(function() {
     });
 });
 
-// wow, very fade, much start
-new WOW().init();
-
 // leaflet stuff - TODO: Load map tiles on demand
 var map = L.map('map', {
     center: [41.375433, 2.086588],

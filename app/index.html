@@ -5,63 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>El canal absent, una metàfora del canvi urbà</title>
-    <!-- Bootstrap -->
+
     <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Leaflet -->
     <link rel="stylesheet" href="/bower_components/leaflet/dist/leaflet.css" />
-    <!-- Custom fonts -->
-    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Source+Serif+Pro:400" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.min.css">
-    <!-- Libraries -->
-    <link rel="stylesheet" href="/bower_components/wow/css/libs/animate.css">
     <link rel="stylesheet" href="/bower_components/Leaflet.awesome-markers/dist/leaflet.awesome-markers.css">
-    <!-- Style -->
+
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300|Source+Serif+Pro:400" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/main.css" />
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn"t work if you view the page via file:// -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-  </head>
-  <body>
-    <section class="fullBackground" data-vide-bg="mp4: video/cover.mp4, webm: video/cover.webm, ogv: video/cover.ogv, poster: img/poster.jpg" data-vide-options="posterType: jpg, loop: true, preload: auto, muted: false, position: 0% 0%">
-        <div class="container">
+    </head>
+    <body>
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-md-8">
-                    <h1 class="mapHeadline wow fadeInDown" data-wow-duration="2s" data-wow-delay="4s">El canal absent</h1>
-                </div>
-                <div class="col-md-4">
-                    <div class="mapIntro wow fadeIn" data-wow-duration="2s" data-wow-delay="6s">
-                        <p>El Baix Llobregat no seria el que és sense el Canal de la Infanta. Des del 1819 rega el marge esquerre del Llobregat, des de Molins de Rei fins a Montjuïc. Estava pensat per a l’agricultura, però va ser clau perquè s’hi instalessin fàbriques que aprofitaven l’energia hidràulica.</p>
-                        <p>Gràcies a ell va créixer la comarca, però aquest creixement l’ha engolit. Gairebé no queden terres ni fàbriques i les ciutats li donen l’esquena. Associacions en defensa del patrimoni històric el volen posar en valor. <hr /> </p>
-                        <p class="mapCredit"> <a href="https://twitter.com/jordijs">Jordi Julià</a> i <a href="https://twitter.com/martgnz">Martín González</a></p>
+                <section class="fullBackground" data-vide-bg="mp4: video/cover.mp4, webm: video/cover.webm, ogv: video/cover.ogv, poster: img/poster.jpg" data-vide-options="posterType: jpg, loop: true, preload: auto, muted: true, position: 0% 0%">
+                        <div class="col-md-4 separator">
+                            <h1 class="mapHeadline">El canal absent</h1>
+                            <div class="mapIntro">
+                                <p>El Baix Llobregat no seria el que és sense el Canal de la Infanta. Des del 1819 rega el marge esquerre del Llobregat, des de Molins de Rei fins a Montjuïc. Estava pensat per a l’agricultura, però va ser clau perquè s’hi instalessin fàbriques que aprofitaven l’energia hidràulica.</p>
+                                <p>Gràcies a ell va créixer la comarca, però aquest creixement l’ha engolit. Gairebé no queden terres ni fàbriques i les ciutats li donen l’esquena. Associacions en defensa del patrimoni històric el volen posar en valor. <hr /> </p>
+                                <p class="mapCredit"> <a href="https://twitter.com/jordijs">Jordi Julià</a> i <a href="https://twitter.com/martgnz">Martín González</a></p>
+                            </div>
+                            <div class="scrollDown">
+                                <a href="#map">
+                                    <span class="scrollDown--text hidden-xs">Explora el mapa</span>
+                                    <span class="scrollDown--arrow fa fa-angle-down"></span>
+                                </a>
+                            </div>
+                        </div>
+                </section>
+
+                <section class="mapSection">
+                    <div class="mapTitle hidden-xs">
+                        <h1>Un viatge al passat</h1>
+                        <p>El mestre d'obres Mariano Tomás y Barba va elaborar aquest mapa el 1908,<br /> ara digitalitzat per l'Institut Cartogràfic i Geològic de Catalunya. Com la<br /> majoria del canal està soterrat, cal que superposem el traçat dels carrers<br /> actuals per resseguir el seu traçat. Tot i això, encara queden algunes<br /> restes visibles.</p>
                     </div>
-                </div>
-                <div class="wow fadeIn" data-wow-duration="2s" data-wow-delay="6s">
-                    <a class="scrollDown fa fa-angle-down hidden-xs" href="#map"><span class="hidden">Scroll Down</span></a>
-                </div>
+
+                    <div class="col-sm-12">
+                        <div id="map"></div>
+                    </div>
+                </section>
             </div>
         </div>
-    </section>
-
-    <section>
-        <div class="mapTitle hidden-xs">
-            <h1>Un viatge al passat</h1>
-            <p>El mestre d'obres Mariano Tomás y Barba va elaborar aquest mapa el 1908,<br /> ara digitalitzat per l'Institut Cartogràfic i Geològic de Catalunya. Com la<br /> majoria del canal està soterrat, cal que superposem el traçat dels carrers<br /> actuals per resseguir el seu traçat. Tot i això, encara queden algunes<br /> restes visibles.</p>
-        </div>
-
-        <div class="col-sm-12">
-            <div id="map"></div>
-        </div>
-    </section>
 
     <script src="/bower_components/jquery/dist/jquery.min.js"></script>
     <script src="/bower_components/jquery-easing/jquery.easing.min.js"></script>
     <script src="/bower_components/Scrollify/jquery.scrollify.min.js"></script>
     <script src="/bower_components/vide/dist/jquery.vide.min.js"></script>
-    <script src="/bower_components/wow/dist/wow.min.js"></script>
     <script src="/bower_components/leaflet/dist/leaflet.js"></script>
     <script src="/bower_components/Leaflet.awesome-markers/dist/leaflet.awesome-markers.js"></script>
     <script src="js/main.js"></script>
