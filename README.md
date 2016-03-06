@@ -1,7 +1,10 @@
 # canal-infanta
 A newsapp to navigate through the Canal de la Infanta.
 
-Install the dependencies with `bower install` and run your local server of choice (if you don't have any, install node's `http-server`) to `localhost:8080/app`.
+## Getting started
+The production version is on the  `gh-pages` branch which is by default.
+
+If you need to hack this site, check on `master`, install the dependencies with `bower install` and run your local server of choice (`localhost:8080/app`).
 
 ## License
 - Code: MIT.
