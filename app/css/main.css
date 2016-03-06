@@ -17,7 +17,7 @@ a:hover {
 .fullBackground {
     height: 100vh;
 }
-.separator {
+.storyBg {
     background-color: rgba(0,0,0,0.4);
     border-radius: 2px;
     height: 100vh;
@@ -37,10 +37,8 @@ a:hover {
     font-size: 2rem;
 }
 .bgCredit {
-    font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
+    font-family: 'Source Serif Pro', Georgia, serif;
     font-size: 1.5rem;
-    letter-spacing: 0.3rem;
     text-align: center;
 }
 .scrollDown {
@@ -72,8 +70,10 @@ a:hover {
     color: rgba(255, 255, 255, 0.7);
 }
 .mapIntro {
+    max-width: 400px;
     border-radius: 2px;
     margin-top: 10px;
+    padding-top: 10px;
     position: absolute;
     padding-left: 10px;
     margin-left: -10px;
@@ -82,10 +82,6 @@ a:hover {
     z-index: 1;
     right: 30px;
     background-color: rgba(51,51,51,0.5)
-}
-.mapTitle {
-    font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    color: rgb(255, 255, 255);
 }
 .mapText {
     font-family: 'Source Serif Pro', Georgia, serif;
@@ -97,22 +93,30 @@ a:hover {
     color: rgb(255, 255, 255);
     font-size: 1.5rem;
 }
-.leaflet-container img {
-    width: 465px;
+.img-fluid {
     border-radius: 2px;
+    max-width: 100%;
+    height: auto;
 }
 .leaflet-popup {
-    width: 500px;
+    width: 600px;
 }
 .leaflet-popup-content {
     color: rgb(51, 51, 51);
-    width: 480px !important;
+    font-family: 'Source Serif Pro', Georgia, serif;
+    width: 580px !important;
 }
 .leaflet-popup-content h3 {
     margin: 0 auto;
 }
 .leaflet-popup-content p {
-    margin: 12px 0px;
+    padding-top: 0.5rem;
+    margin: 0 auto
+}
+.leaflet-popup-content iframe {
+    display: block;
+    text-align: center;
+    margin: 0 auto
 }
 .leaflet-control-attribution a:hover {
     color: rgb(0, 120, 168);
@@ -127,8 +131,5 @@ div.awesome-marker-icon-red > i > span {
 @media (min-width: 768px) {
     .scrollDown {
         margin-top: 4rem;
-    }
-    .bgHeadline {
-        text-align: left;
     }
 }

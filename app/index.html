@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>El canal absent, una metàfora del canvi urbà</title>
+    <title>El canal de la Infanta, una metàfora del canvi urbà</title>
 
     <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/bower_components/leaflet/dist/leaflet.css" />
@@ -14,8 +14,6 @@
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300|Source+Serif+Pro:400" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/main.css" />
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn"t work if you view the page via file:// -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -25,12 +23,14 @@
         <div class="container-fluid">
             <div class="row">
                 <section class="fullBackground" data-vide-bg="mp4: video/cover.mp4, webm: video/cover.webm, ogv: video/cover.ogv, poster: img/poster.jpg" data-vide-options="posterType: jpg, loop: true, preload: auto, muted: true, position: 0% 0%">
-                        <div class="col-md-4 separator">
+                    <div class="storyBg col-md-4">
+                        <div class="storyContent">
                             <h1 class="bgHeadline">El canal absent</h1>
+                            <hr />
                             <div class="bgIntro">
+                                <p class="bgCredit">Per <a href="https://twitter.com/jordijs">JORDI JULIÀ</a> i <a href="https://twitter.com/martgnz">MARTÍN GONZÁLEZ</a></p>
                                 <p>El Baix Llobregat no seria el que és sense el Canal de la Infanta. Des del 1819 rega el marge esquerre del Llobregat, des de Molins de Rei fins a Montjuïc. Estava pensat per a l’agricultura, però va ser clau perquè s’hi instalessin fàbriques que aprofitaven l’energia hidràulica.</p>
-                                <p>Gràcies a ell va créixer la comarca, però aquest creixement l’ha engolit. Gairebé no queden terres ni fàbriques i les ciutats li donen l’esquena. Associacions en defensa del patrimoni històric el volen posar en valor. <hr /> </p>
-                                <p class="bgCredit"> <a href="https://twitter.com/jordijs">Jordi Julià</a> i <a href="https://twitter.com/martgnz">Martín González</a></p>
+                                <p>Gràcies a ell va créixer la comarca, però aquest creixement l’ha engolit. Gairebé no queden terres ni fàbriques i les ciutats li donen l’esquena. Associacions en defensa del patrimoni el volen posar en valor.</p>
                             </div>
                             <div class="scrollDown">
                                 <a href="#map">
@@ -39,12 +39,13 @@
                                 </a>
                             </div>
                         </div>
+                    </div>
                 </section>
 
                 <section class="mapSection">
                     <div class="mapIntro hidden-xs">
-                        <h1 class="mapTitle">Un viatge al passat</h1>
-                        <p class="mapText">El mestre d'obres Mariano Tomás y Barba va elaborar aquest mapa el 1908,<br /> ara digitalitzat per l'Institut Cartogràfic i Geològic de Catalunya. Com la<br /> majoria del canal està soterrat, cal que superposem el traçat dels carrers<br /> actuals per resseguir el seu traçat. Tot i això, encara queden algunes<br /> restes visibles.</p>
+                        <p class="mapText balance-text">El mestre d'obres Mariano Tomás y Barba va elaborar aquest mapa el 1908, ara digitalitzat per l'Institut Cartogràfic i Geològic de Catalunya.</p>
+                        <p class="mapText balance-text">Com la majoria del canal està soterrat, cal que superposem el traçat dels carrers actuals per resseguir el seu traçat. Tot i això, encara queden algunes restes visibles.</p>
                     </div>
 
                     <div class="col-sm-12">
@@ -58,6 +59,7 @@
     <script src="/bower_components/jquery-easing/jquery.easing.min.js"></script>
     <script src="/bower_components/Scrollify/jquery.scrollify.min.js"></script>
     <script src="/bower_components/vide/dist/jquery.vide.min.js"></script>
+    <script src="/bower_components/balance-text/jquery.balancetext.min.js"></script>
     <script src="/bower_components/leaflet/dist/leaflet.js"></script>
     <script src="/bower_components/Leaflet.awesome-markers/dist/leaflet.awesome-markers.js"></script>
     <script src="js/main.js"></script>

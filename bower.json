@@ -29,6 +29,7 @@
     "jquery-easing": "*",
     "font-awesome": "~4.3.0",
     "vide": "~0.5.0",
-    "Leaflet.awesome-markers": "~2.0.2"
+    "Leaflet.awesome-markers": "~2.0.2",
+    "balance-text": "^1.6.0"
   }
 }
