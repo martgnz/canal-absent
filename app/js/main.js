@@ -12,19 +12,26 @@ $(function() {
     });
 });
 
+var southWest = L.latLng(41.34614431396888, 1.9766807556152342),
+    northEast = L.latLng(41.40475455458425, 2.1964073181152344),
+    bounds = L.latLngBounds(southWest, northEast);
 
 // leaflet stuff
 var map = L.map('map', {
     center: [41.375433, 2.086588],
     zoom: 13,
-    layers:[
-      L.tileLayer('http://{s}.tiles.mapbox.com/v4/martingnz.pbb52017/{z}/{x}/{y}@2x.png?access_token=pk.eyJ1IjoibWFydGluZ256IiwiYSI6ImNpbGd2cG5tMTAwNWV3OGx6MHg1MmltYnQifQ.A6Fvtb7Sk_okvco9kuDziA'),
-      L.tileLayer('http://mapwarper.net/maps/tile/9810/{z}/{x}/{y}.png', {
-        opacity: 0.6,
-        attribution: '<a href="https://www.mapbox.com/about/maps/">© Mapbox</a> | <a href="https://www.mapbox.com/map-feedback/"><strong>Improve this map</strong></a> | <a href="http://cartotecadigital.icc.cat/cdm/ref/collection/catalunya/id/1602">Institut Cartogràfic i Geològic de Catalunya</a>.'
-      })
+    minZoom: 13,
+    maxBounds: bounds,
+    layers: [
+        L.tileLayer('http://{s}.tiles.mapbox.com/v4/martingnz.pbb52017/{z}/{x}/{y}@2x.png?access_token=pk.eyJ1IjoibWFydGluZ256IiwiYSI6ImNpbGd2cG5tMTAwNWV3OGx6MHg1MmltYnQifQ.A6Fvtb7Sk_okvco9kuDziA'),
+        L.tileLayer('http://mapwarper.net/maps/tile/9810/{z}/{x}/{y}.png', {
+            opacity: 0.6,
+            attribution: '<a href="https://www.mapbox.com/about/maps/">© Mapbox</a> | <a href="http://cartotecadigital.icc.cat/cdm/ref/collection/catalunya/id/1602"><b>Institut Cartogràfic i Geològic de Catalunya</b></a>.'
+        })
     ]
 });
+console.log(map.getBounds());
+
 
 // map listeners
 map.on('drag', function () {
