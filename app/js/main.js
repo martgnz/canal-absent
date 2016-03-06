@@ -5,7 +5,7 @@ $(function() {
     });
 });
 
-// leaflet stuff - TODO: Load map tiles on demand
+// leaflet stuff
 var map = L.map('map', {
     center: [41.375433, 2.086588],
     zoom: 13,
@@ -17,6 +17,20 @@ var map = L.map('map', {
       })
     ]
 });
+
+// map listeners
+map.on('drag', function () {
+    $(".mapIntro").fadeOut();
+});
+
+map.on("zoomend", function() {
+    if (map.getZoom() > 13) {
+        $(".mapIntro").fadeOut();
+    }
+    else {
+        $(".mapIntro").fadeIn();
+    }
+})
 
 // Disable scrollwheel handler.
 map.scrollWheelZoom.disable();

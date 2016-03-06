@@ -22,7 +22,7 @@ a:hover {
     border-radius: 2px;
     height: 100vh;
 }
-.mapHeadline {
+.bgHeadline {
     color: rgb(255,255,255);
     text-shadow: rgba(0,0,0,0.2) 0px 0px 2px, rgba(0,0,0,0.2) 0px 0px 6px, rgba(0,0,0,0.2) 0px 0px 10px, rgba(0,0,0,0.2) 0px 0px 10px, rgba(0,0,0,0.2) 0px 0px 10px, rgba(0,0,0,0.2) 0px 0px 20px;
     font-size: 4rem;
@@ -30,13 +30,13 @@ a:hover {
     text-transform: uppercase;
     text-align: center;
 }
-.mapIntro {
+.bgIntro {
     text-shadow: rgba(0,0,0,0.2) 0px 0px 2px, rgba(0,0,0,0.2) 0px 0px 6px, rgba(0,0,0,0.2) 0px 0px 10px, rgba(0,0,0,0.2) 0px 0px 10px, rgba(0,0,0,0.2) 0px 0px 10px, rgba(0,0,0,0.2) 0px 0px 20px;
     font-family: 'Source Serif Pro', Georgia, serif;
     color: rgb(255,255,255);
     font-size: 2rem;
 }
-.mapCredit {
+.bgCredit {
     font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     font-size: 1.5rem;
@@ -71,9 +71,8 @@ a:hover {
 .scrollDown--arrow {
     color: rgba(255, 255, 255, 0.7);
 }
-.mapTitle {
-    color: rgb(255, 255, 255);
-    border-radius: 4px;
+.mapIntro {
+    border-radius: 2px;
     margin-top: 10px;
     position: absolute;
     padding-left: 10px;
@@ -83,6 +82,15 @@ a:hover {
     z-index: 1;
     right: 30px;
     background-color: rgba(51,51,51,0.5)
+}
+.mapTitle {
+    font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: rgb(255, 255, 255);
+}
+.mapText {
+    font-family: 'Source Serif Pro', Georgia, serif;
+    color: rgb(240, 240, 240);
+    font-size: 1.6rem;
 }
 .leaflet-container {
     font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -120,7 +128,7 @@ div.awesome-marker-icon-red > i > span {
     .scrollDown {
         margin-top: 4rem;
     }
-    .mapHeadline {
+    .bgHeadline {
         text-align: left;
     }
 }
