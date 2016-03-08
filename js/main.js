@@ -12,8 +12,8 @@ $(function() {
     });
 });
 
-var southWest = L.latLng(41.31675492608685, 1.8669891357421875),
-    northEast = L.latLng(41.43397551995129, 2.3064422607421875),
+var southWest = L.latLng(41.272645986935586, 1.6472625732421875),
+    northEast = L.latLng(41.47771800887873, 2.5261688232421875),
     bounds = L.latLngBounds(southWest, northEast);
 
 // leaflet stuff
