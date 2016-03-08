@@ -5,9 +5,18 @@ body {
     font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 a,
-a:hover:not(.leaflet-popup-content a:hover) {
+a:hover,
+a:focus {
     text-decoration: none;
     color: rgb(255, 255, 255);
+}
+.mapText a {
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+}
+.leaflet-container a:hover {
+    color: #0078A8;
+    text-decoration: underline;
 }
 .col-sm-12 {
     padding-left: 0;
